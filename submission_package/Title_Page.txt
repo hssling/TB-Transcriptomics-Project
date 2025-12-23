@@ -1,0 +1,25 @@
+**TITLE PAGE**
+
+**Title**: Dynamic Transcriptomic Signatures in Tuberculosis: Validating Rapid Normalization Kinetics
+
+**Authors**:
+1.  **Dr Siddalingaiah H S** (Corresponding Author)
+    *   Professor, Community Medicine
+    *   Shridevi Institute of Medical Sciences and Research Hospital, Tumkur
+    *   Tumkur, India
+    *   Email: hssling@yahoo.com
+    *   Phone: 8941087719
+    *   ORCID: 0000-0002-4771-8285
+
+**Running Head**: Rapid TB Transcriptomic Normalization
+
+**Keywords**: Tuberculosis, Biomarkers, Transcriptomics, Treatment Monitoring, Host-Directed Diagnostics.
+
+**Word Count**: ~3000
+**Figures**: 2
+**Tables**: 3
+**Reference Count**: 33
+
+**Funding**: This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
+
+**Conflicts of Interest**: The authors declare no conflicts of interest.

@@ -1,0 +1,30 @@
+December 24, 2025
+
+**Editor-in-Chief**  
+Clinical Infectious Diseases (CID)
+
+**RE: Submission of Manuscript "Dynamic Transcriptomic Signatures in Tuberculosis: Validating Rapid Normalization Kinetics"**
+
+Dear Editor,
+
+I am pleased to submit our original research article for consideration in *Clinical Infectious Diseases*.
+
+Tuberculosis (TB) treatment monitoring currently faces a critical "blind spot" due to the slowness of sputum culture conversion. In this study, we analyzed longitudinal transcriptomic data from 367 patients to validate a molecular alternative.
+
+**Key Findings:**
+1.  **Rapid Triage**: We demonstrate that host RNA biomarkers significantly normalize (p < 0.0001) as early as **Week 1** of treatment, providing a real-time metric of drug efficacy weeks before culture results.
+2.  **Biological Validation**: We characterize the recovery of a "Suppressed" T-cell homeostatic module, proving that cure is not just the absence of inflammation but the restoration of immune health.
+
+Given CID's focus on clinically relevant insights, we believe this work offers a timely contribution to the field of non-sputum diagnostics and personalized medicine.
+
+This manuscript has not been published and is not under consideration elsewhere. The authors declare no conflicts of interest.
+
+Sincerely,
+
+**Dr Siddalingaiah H S**  
+Professor, Community Medicine  
+Shridevi Institute of Medical Sciences and Research Hospital, Tumkur  
+Tumkur, India  
+Email: hssling@yahoo.com  
+Phone: 8941087719  
+ORCID: 0000-0002-4771-8285
