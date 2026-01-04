@@ -1,0 +1,43 @@
+EBIOMEDICINE SUBMISSION CHECKLIST
+
+Date: December 25, 2025
+
+BEFORE SUBMISSION:
+☐ Review manuscript for typos and formatting
+☐ Verify all author information is correct
+☐ Check all references have DOIs
+☐ Ensure figures are high resolution (300 dpi)
+☐ Convert figures to TIFF format
+☐ Create Figure 1 (study flowchart)
+☐ Verify tables are in editable format
+☐ Review cover letter
+
+DURING SUBMISSION:
+☐ Create Editorial Manager account
+☐ Select article type: Original Research Article
+☐ Enter title and abstract
+☐ Add author information (ORCID: 0000-0002-4771-8285)
+☐ Upload main manuscript
+☐ Upload cover letter
+☐ Upload figures (TIFF format)
+☐ Upload tables
+☐ Suggest reviewers (4 recommended)
+☐ Declare no conflicts of interest
+☐ Confirm data availability
+☐ Review and submit
+
+AFTER SUBMISSION:
+☐ Save submission confirmation
+☐ Track manuscript status
+☐ Respond to editor queries promptly
+☐ Prepare for potential revisions
+
+CONTACT:
+EBioMedicine Editorial Office
+Email: ebiomedicine@lancet.com
+Submission System: https://www.editorialmanager.com/ebiom/
+
+AUTHOR:
+Dr. Siddalingaiah H S
+Email: hssling@yahoo.com
+ORCID: 0000-0002-4771-8285

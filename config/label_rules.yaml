@@ -1,0 +1,24 @@
+# TEMPLATE RULES — refine after running tools/inspect_geo_metadata.py
+
+GSE89403:
+  timepoint_rules:
+    - match: "(?i)diagnosis|dx|week\\s*0|baseline"
+      value: "baseline"
+    - match: "(?i)week\\s*1"
+      value: "week1"
+    - match: "(?i)week\\s*4"
+      value: "week4"
+    - match: "(?i)week\\s*24|month\\s*6"
+      value: "month6"
+  label_rules:
+    - match: "(?i)poor|failure|not\\s*cured|relapse|unfavourable|unfavorable"
+      value: 1
+    - match: "(?i)good|cure|cured|successful|favourable|favorable"
+      value: 0
+
+GSE107994:
+  label_rules:
+    - match: "(?i)progressor|active_tb"
+      value: 1
+    - match: "(?i)ltbi|control"
+      value: 0

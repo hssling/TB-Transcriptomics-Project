@@ -1,0 +1,8 @@
+__version__ = "1.0.0"
+__author__ = "Dr. Siddalingaiah H S"
+__email__ = "hssling@yahoo.com"
+__institution__ = "Shridevi Institute of Medical Sciences and Research Hospital, Tumkur"
+__orcid__ = "0000-0002-4771-8285"
+__license__ = "MIT"
+__status__ = "Production"
+__date__ = "2025-12-25"

@@ -1,0 +1,20 @@
+{
+  "cohort": null,
+  "n": 0,
+  "events": 0,
+  "best_model_name": "xgboost",
+  "roc_auc": null,
+  "roc_auc_bootstrap_mean": null,
+  "roc_auc_ci95": [
+    null,
+    null
+  ],
+  "pr_auc": null,
+  "pr_auc_bootstrap_mean": null,
+  "pr_auc_ci95": [
+    null,
+    null
+  ],
+  "brier": null,
+  "note": "External validation disabled - using nested CV only"
+}

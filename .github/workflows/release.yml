@@ -1,0 +1,44 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Create Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: |
+          ## TB Treatment Failure Prediction - Release ${{ github.ref }}
+          
+          ### Changes
+          - See CHANGELOG.md for details
+          
+          ### Citation
+          If you use this code, please cite our paper:
+          [Citation to be added upon publication]
+        draft: false
+        prerelease: false
+
+  publish-zenodo:
+    runs-on: ubuntu-latest
+    needs: create-release
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Zenodo upload placeholder
+      run: |
+        echo "Zenodo DOI will be generated upon first release"
+        echo "✅ Release created successfully"

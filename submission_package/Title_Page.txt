@@ -5,7 +5,7 @@
 **Authors**:
 1.  **Dr Siddalingaiah H S** (Corresponding Author)
     *   Professor, Community Medicine
-    *   Shridevi Institute of Medical Sciences and Research Hospital
+    *   Shridevi Institute of Medical Sciences and Research Hospital, Tumkur
     *   Tumkur, India
     *   Email: hssling@yahoo.com
     *   Phone: 8941087719
@@ -13,7 +13,7 @@
 
 **Running Head**: Rapid TB Transcriptomic Normalization
 
-**Keywords**: Tuberculosis, Transcriptomics, Biomarkers, Treatment Monitoring, Host-Directed Diagnostics, Rapid Kinetics, Immunology.
+**Keywords**: Tuberculosis, Biomarkers, Transcriptomics, Treatment Monitoring, Host-Directed Diagnostics.
 
 **Word Count**: ~3000
 **Figures**: 2

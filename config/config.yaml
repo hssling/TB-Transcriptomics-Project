@@ -1,0 +1,41 @@
+project_name: "tb-outcome-public-omics-ml"
+random_seed: 20251221
+
+# hold out entire cohort for external validation
+# Set to null to disable external validation (use nested CV only)
+external_validation_cohort: null
+
+# ingestion_mode: "processed" or "raw_fastq"
+ingestion_mode: "processed"
+
+# GEO series to include
+geo_series: ["GSE89403"]
+
+# Label mapping rules
+label_rules_yaml: "config/label_rules.yaml"
+
+# Modeling
+models: ["logistic", "random_forest", "xgboost"]
+nested_cv:
+  outer_folds: 3
+  inner_folds: 3
+  scoring: "roc_auc"
+
+# External validation bootstrap
+bootstrap:
+  n: 2000
+  seed: 20251221
+
+# Raw FASTQ / Salmon (optional)
+salmon:
+  threads: 8
+  # You must set these if using raw_fastq:
+  transcriptome_fasta: "resources/transcriptome.fa.gz"
+  tx2gene: "resources/tx2gene.tsv"
+  # index will be built at outputs/salmon_index
+
+enrichr:
+  libraries:
+    - "Reactome_2022"
+    - "KEGG_2021_Human"
+    - "GO_Biological_Process_2023"

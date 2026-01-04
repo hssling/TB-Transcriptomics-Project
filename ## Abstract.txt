@@ -1,0 +1,22 @@
+## Abstract
+Background: Identification of blood biomarkers that prospectively predict progression of Mycobacterium tuberculosis infection to tuberculosis disease might lead to interventions that combat the tuberculosis epidemic. We aimed to assess whether global gene expression measured in whole blood of healthy people allowed identification of prospective signatures of risk of active tuberculosis disease.
+Methods: In this prospective cohort study, we followed up healthy, South African adolescents aged 12-18 years from the adolescent cohort study (ACS) who were infected with M tuberculosis for 2 years. We collected blood samples from study participants every 6 months and monitored the adolescents for progression to tuberculosis disease. A prospective signature of risk was derived from whole blood RNA sequencing data by comparing participants who developed active tuberculosis disease (progressors) with those who remained healthy (matched controls). After adaptation to multiplex quantitative real-time PCR (qRT-PCR), the signature was used to predict tuberculosis disease in untouched adolescent samples and in samples from independent cohorts of South African and Gambian adult progressors and controls. Participants of the independent cohorts were household contacts of adults with active pulmonary tuberculosis disease.
+Findings: Between July 6, 2005, and April 23, 2007, we enrolled 6363 participants from the ACS study and 4466 from independent South African and Gambian cohorts. 46 progressors and 107 matched controls were identified in the ACS cohort. A 16 gene signature of risk was identified. The signature predicted tuberculosis progression with a sensitivity of 66·1% (95% CI 63·2-68·9) and a specificity of 80·6% (79·2-82·0) in the 12 months preceding tuberculosis diagnosis. The risk signature was validated in an untouched group of adolescents (p=0·018 for RNA sequencing and p=0·0095 for qRT-PCR) and in the independent South African and Gambian cohorts (p values <0·0001 by qRT-PCR) with a sensitivity of 53·7% (42·6-64·3) and a specificity of 82·8% (76·7-86) in the 12 months preceding tuberculosis.
+Interpretation: The whole blood tuberculosis risk signature prospectively identified people at risk of developing active tuberculosis, opening the possibility for targeted intervention to prevent the disease.
+Funding: Bill & Melinda Gates Foundation, the National Institutes of Health, Aeras, the European Union, and the South African Medical Research Council.
+Copyright © 2016 Elsevier Ltd. All rights reserved.
+[PubMed Disclaimer](https://pubmed.ncbi.nlm.nih.gov/disclaimer/)
+
+## Conflict of interest statement
+Declaration of interests
+The authors have no potential conflicts to declare.
+
+## Figures
+Figure 1. The Adolescent Cohort Study (ACS)…
+Figure 1. The Adolescent Cohort Study (ACS) and the Grand Challenges 6-74 Study (GC6-74) cohorts…
+Figure 2. Strategy for discovery and validation…
+Figure 2. Strategy for discovery and validation of the tuberculosis risk signature
+(A) Flow diagram…
+Figure 3. The tuberculosis risk signature and…
+Figure 3. The tuberculosis risk signature and validation by prediction of tuberculosis disease progression in…
+[See this image and copyright information in PMC](https://pubmed.ncbi.nlm.nih.gov/27017310/)
