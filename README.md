@@ -17,9 +17,13 @@ We demonstrate that host gene expression profiles, specifically Inflammatory (Hy
 
 ## Reproduction
 To reproduce the findings:
-1.  Install dependencies: `pip install pandas scipy seaborn matplotlib`
-2.  Run analysis: `python src/analysis_core.py`
-3.  Generate plots: `python src/visualization.py`
+1.  Install dependencies: `pip install -r requirements.txt`
+2.  **Option A: Quick Analysis (Manuscript Figures)**
+    *   Run analysis: `python src/analysis_core.py`
+    *   Generate plots: `python src/visualization.py`
+3.  **Option B: Full Machine Learning Pipeline (Reproduce Model & Validation)**
+    *   Run end-to-end pipeline: `python run_pipeline.py`
+    *   *Note: This will download data, train nested CV models, and run external validation.*
 
 ## Citation
 If you use this code, please cite:
