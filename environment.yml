@@ -1,0 +1,28 @@
+name: tb-omics-ml
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - snakemake-minimal=8.*
+  - pandas
+  - numpy
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - pyyaml
+  - tqdm
+  - requests
+  - bioconda::salmon
+  - bioconda::sra-tools
+  - bioconda::fastqc
+  - bioconda::multiqc
+  - pip:
+      - GEOparse
+      - xgboost
+      - shap
+      - pyarrow
+      - joblib
+      - gseapy
+      - quarto-cli
