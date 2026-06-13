@@ -25,8 +25,8 @@ multiple on-treatment samples per subject are pooled (quantified in
 `01b_sensitivity_timepoints.py`).
 
 ## External cohort — GSE193979 (TANDEM)
-- NCBI GEO `GSE193979` (Vianello E et al., *EBioMedicine* 2022); whole-blood
-  RNA-seq, South Africa + Indonesia, good vs poor treatment outcome.
+- NCBI GEO `GSE193979` (van Doorn CLR et al., *EBioMedicine* 2022;82:104173);
+  whole-blood RNA-seq, South Africa + Indonesia, good vs poor treatment outcome.
 - Downloaded on demand by `06_external_validation.py`
   (`GSE193979_TANDEM_longitudinal_paper2_rawdata.txt.gz`).
 - **Not usable for outcome-stratified validation**: per-patient outcomes are not

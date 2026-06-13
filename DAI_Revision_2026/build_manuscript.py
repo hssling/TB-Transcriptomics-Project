@@ -486,51 +486,65 @@ P([hl("Generative AI tools assisted with code development, literature search "
 # ===== REFERENCES =====
 H("References", 1)
 refs = [
- "World Health Organization. Global Tuberculosis Report 2024. Geneva: WHO; 2024.",
- "World Health Organization. Treatment of tuberculosis: guidelines. Geneva: WHO.",
+ "World Health Organization. Global tuberculosis report 2024. Geneva: World "
+ "Health Organization; 2024. ISBN 9789240101531.",
+ "World Health Organization. Treatment of tuberculosis: guidelines. 4th ed. "
+ "Geneva: World Health Organization; 2010. ISBN 9789241547833.",
  "Berry MPR, Graham CM, McNab FW, et al. An interferon-inducible "
  "neutrophil-driven blood transcriptional signature in human tuberculosis. "
- "Nature. 2010;466:973–977.",
+ "Nature. 2010;466(7309):973–977. doi:10.1038/nature09247.",
  "Zak DE, Penn-Nicholson A, Scriba TJ, et al. A blood RNA signature for "
  "tuberculosis disease risk: a prospective cohort study. Lancet. "
- "2016;387:2312–2322.",
+ "2016;387(10035):2312–2322. doi:10.1016/S0140-6736(15)01316-1.",
  "Sweeney TE, Braviak L, Tato CM, Khatri P. Genome-wide expression for "
  "diagnosis of pulmonary tuberculosis: a multicohort analysis. Lancet Respir "
- "Med. 2016;4:213–224.",
+ "Med. 2016;4(3):213–224. doi:10.1016/S2213-2600(16)00048-5.",
  "Singhania A, Verma R, Graham CM, et al. A modular transcriptional signature "
  "identifies phenotypic heterogeneity of human tuberculosis infection. Nat "
- "Commun. 2018;9:2308.",
- "Blood transcriptomic signatures predict poor treatment outcomes in "
- "drug-susceptible pulmonary TB in Brazil (RePORT-Brazil). 2025. PMID 41282706.",
+ "Commun. 2018;9(1):2308. doi:10.1038/s41467-018-04579-w.",
+ "Mendelsohn SC, Andrade BB, Araújo-Pereira M, et al.; RePORT South Africa and "
+ "RePORT-Brazil Consortia. Blood transcriptomic signatures predict poor "
+ "treatment outcomes in drug-susceptible pulmonary TB in Brazil. medRxiv "
+ "[preprint]. 2025 Oct 8. doi:10.1101/2025.10.07.25337480.",
  "Lowe DM, Redford PS, Wilkinson RJ, O’Garra A, Martineau AR. Neutrophils in "
- "tuberculosis: friend or foe? Trends Immunol. 2012;33:14–25.",
+ "tuberculosis: friend or foe? Trends Immunol. 2012;33(1):14–25. "
+ "doi:10.1016/j.it.2011.10.003.",
  "Sambarey A, Smith K, Chung C, et al. Integrative analysis of multimodal "
  "patient data identifies personalized predictors of tuberculosis treatment "
- "prognosis. iScience. 2024. PMID 38357663.",
+ "prognosis. iScience. 2024;27(2):109025. doi:10.1016/j.isci.2024.109025.",
  "Vinhaes CL, Fukutani ER, Santana GC, et al. An integrative multi-omics "
  "approach to characterize interactions between tuberculosis and diabetes "
- "mellitus. iScience. 2024. PMID 38380250.",
+ "mellitus. iScience. 2024;27(3):109135. doi:10.1016/j.isci.2024.109135.",
  "Peng A-Z, Kong X-H, Liu S-T, et al. Explainable machine learning for early "
  "predicting treatment failure risk among patients with TB-diabetes "
- "comorbidity. Sci Rep. 2024. PMID 38514736.",
+ "comorbidity. Sci Rep. 2024;14(1):6814. doi:10.1038/s41598-024-57446-8.",
  "Thompson EG, Du Y, Malherbe ST, et al. Host blood RNA signatures predict the "
- "outcome of tuberculosis treatment. Tuberculosis. 2017;107:48–58 (GSE89403).",
- "Ndhlovu M, et al. Host-directed therapies for tuberculosis: a review. Front "
- "Immunol. 2019;10:325.",
- "Vianello E, et al. Transcriptional profiles predict treatment outcome in "
- "patients with tuberculosis and diabetes (TANDEM; GSE193979). EBioMedicine. "
- "2022;80:104023.",
+ "outcome of tuberculosis treatment. Tuberculosis (Edinb). 2017;107:48–58. "
+ "doi:10.1016/j.tube.2017.08.004. (GSE89403)",
+ "Krug S, Parveen S, Bishai WR. Host-directed therapies: modulating "
+ "inflammation to treat tuberculosis. Front Immunol. 2021;12:660916. "
+ "doi:10.3389/fimmu.2021.660916.",
+ "van Doorn CLR, Steenhuis M, Walzl G, et al. Transcriptional profiles predict "
+ "treatment outcome in patients with tuberculosis and diabetes at diagnosis and "
+ "at two weeks after initiation of anti-tuberculosis treatment (TANDEM; "
+ "GSE193979). EBioMedicine. 2022;82:104173. doi:10.1016/j.ebiom.2022.104173.",
  "Newman AM, Liu CL, Green MR, et al. Robust enumeration of cell subsets from "
- "tissue expression profiles. Nat Methods. 2015;12:453–457.",
+ "tissue expression profiles. Nat Methods. 2015;12(5):453–457. "
+ "doi:10.1038/nmeth.3337.",
  "Friedman J, Hastie T, Tibshirani R. Sparse inverse covariance estimation "
- "with the graphical lasso. Biostatistics. 2008;9:432–441.",
+ "with the graphical lasso. Biostatistics. 2008;9(3):432–441. "
+ "doi:10.1093/biostatistics/kxm045.",
  "Lundberg SM, Lee S-I. A unified approach to interpreting model predictions. "
- "Adv Neural Inf Process Syst. 2017;30.",
+ "Adv Neural Inf Process Syst. 2017;30:4765–4774.",
  "Uhlén M, Karlsson MJ, Zhong W, et al. A genome-wide transcriptomic analysis "
- "of protein-coding genes in human blood cells. Science. 2019;366:eaax9198.",
+ "of protein-coding genes in human blood cells. Science. 2019;366(6472):"
+ "eaax9198. doi:10.1126/science.aax9198.",
 ]
 for i, r in enumerate(refs, 1):
-    P([n(f"{i}. {r}")], size=10)
+    p = doc.add_paragraph()
+    run = p.add_run(f"{i}. {r}")
+    run.font.size = Pt(10)
+    run.font.highlight_color = WD_COLOR_INDEX.YELLOW
 
 out = f"{ROOT}/DAI_Revision_2026/deliverables/TB_Treatment_Failure_DAI_MajorRevision_v13.docx"
 doc.save(out)
