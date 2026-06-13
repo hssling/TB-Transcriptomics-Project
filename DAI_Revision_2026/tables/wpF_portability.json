@@ -1,0 +1,7 @@
+{
+  "cohort": "GSE193979",
+  "n_samples": 148,
+  "neutrophil_vs_tcell_spearman": -0.40746362031117545,
+  "p": 2.750226617622661e-07,
+  "note": "label-free portability; outcome-stratified validation not possible from public data (see exclusion table)"
+}

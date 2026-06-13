@@ -1,0 +1,8 @@
+Study,Data,N / events,Approach,Treatment-failure AUC,Contribution
+"This study (baseline, leakage-free)","Whole-blood RNA-seq (GSE89403), baseline DX",90 / 7,Marker deconvolution + ML + GGM network (associative),0.68 (95% CI 0.38-0.89),"Cellular-resolved, sex-confounder-audited baseline risk signal"
+Thompson 2017 (PMID 29050771),Whole-blood RNA-seq (Catalysis = our source),~70 / ~ ,Co-expression modules / RT-PCR signature,Baseline failure signature derived; modest,Original treatment-monitoring signatures
+Vianello/TANDEM 2022 (PMID 35precip; GSE193979),Whole-blood RNA-seq SA+Indonesia,63 / 14 poor,8- & 22-gene signatures,"0.815 (diagnosis), 0.834 (week 2)",Good vs poor outcome at diagnosis
+RePORT-Brazil 2025 (PMID 41282706),Whole-blood transcriptomic signatures,Large cohort,"Curated signatures, multi-timepoint",<0.70 for failure (death/recurrence higher),Shows baseline FAILURE prediction is hard field-wide
+Sambarey 2024 (PMID 38357663),Multimodal clinical/radiological/microbiological,5060 / -,"Random forest, 203 features",~0.83 accuracy,Personalized multimodal prognosis (not transcriptomic-cellular)
+Vinhaes 2024 (PMID 38380250),"Multi-omics (cytokines, expression, eicosanoids)",76 / -,ML on multi-platform TB-DM,n/a (characterization),Multi-omic TB-diabetes interaction
+Peng 2024 (PMID 38514736),Electronic medical records (TB-DM),429 / -,XGBoost + SHAP + Boruta,0.93,Explainable EMR-based failure prediction (not omics)

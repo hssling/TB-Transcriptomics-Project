@@ -1,0 +1,6 @@
+cohort,n,outcome_labels,role,suitable_external
+"GSE89403 (Catalysis, Thompson 2017)",254 (DX baseline 90),Yes (Cure/Not-Cured),DISCOVERY cohort (this study),No - discovery
+"GSE193979 (TANDEM, SA+Indonesia 2022)",~175 samples / 63 patients,Good/Poor (paper only),Closest treatment-outcome RNA-seq cohort,No - per-patient outcome NOT in GEO; count matrix keyed by internal RSEQ IDs with no public bridge to GSM/patient metadata
+"GSE107994 (Leicester, Singhania 2018)",175,"Progression (ATB/LTBI), not treatment outcome",TB progression,"No - outcome mismatch (progression, not treatment failure)"
+"GSE79362 (ACS, Zak 2016)",~355,Progression to active TB,TB progression,No - outcome mismatch
+GSE107991 (Berry/London),54,ATB vs LTBI,TB status,No - no treatment-outcome labels

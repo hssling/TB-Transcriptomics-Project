@@ -1,0 +1,16 @@
+{
+  "all_timepoint_grouped": {
+    "roc_auc": 0.8423944476576055,
+    "pr_auc": 0.25948750636468654,
+    "n": 254,
+    "failure_samples": 7
+  },
+  "by_timepoint": [
+    {
+      "timepoint": "DX",
+      "n": 90,
+      "failures": 7,
+      "auc_oof": 0.698
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "neutrophil_vs_ML_prob": {
+    "spearman_rho": 0.6625262378071366,
+    "p": 1.1420077831650605e-12
+  },
+  "tcell_vs_ML_prob": {
+    "spearman_rho": -0.6578013746553072,
+    "p": 1.8703690665306485e-12
+  },
+  "best_model": "RandomForest",
+  "n": 90
+}
