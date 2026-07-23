@@ -60,17 +60,26 @@ where discrimination was indistinguishable from chance.
 | `DAI_Revision_2026/figures2/` | Figures at 300 dpi |
 | `DAI_Revision_2026/data2/` | Processed expression matrix, sample table, gene map |
 | `DAI_Revision_2026/models/` | Frozen model per arm, selected features, SHA-256 manifest |
-| `DAI_Revision_2026/deliverables/` | Manuscript, supplementary material, letters |
+| `DAI_Revision_2026/deliverables_v14/` | Manuscript, supplementary material, response to reviewers |
 
-Raw GEO downloads are not committed; the scripts retrieve them reproducibly.
+Raw GEO data are not committed — they belong to the original depositors, and
+the scripts fetch and cache them on first run (about 50 MB in total, from
+GSE89403, GSE67589 and platform GPL570). `REPRODUCE_v14.md` lists each file,
+its size, and which script retrieves it, and explains how to supply them
+manually if the environment has no outbound network access.
 
 ### Reproducing it
 
 ```
 pip install -r DAI_Revision_2026/requirements.txt
-python DAI_Revision_2026/analysis/20_build_full_dataset.py
+python DAI_Revision_2026/analysis/20_build_full_dataset.py   # downloads from GEO, builds the matrix
 ...                       # see REPRODUCE_v14.md for the full ordered list
 ```
+
+From a clean checkout the first script reproduces the committed `data2/` byte
+for byte: 16,145 genes, 367 libraries, 98 subjects. If those numbers differ,
+something upstream has changed and the rest of the pipeline should not be
+trusted.
 
 Random seeds are fixed throughout, and the manuscript is rebuilt from the
 analysis outputs by the `build_*_v14.py` scripts, so no reported number is

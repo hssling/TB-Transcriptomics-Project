@@ -21,6 +21,47 @@ can hang inside `platform.uname()`. `analysis/env_fix.py` disables that probe
 and is imported by `analysis/common2.py` before scikit-learn. It is a no-op on
 other platforms.
 
+## Data acquisition
+
+Raw data are **not** committed. They belong to the original depositors, and
+committing them would duplicate an authoritative public record without adding
+anything. The scripts fetch them instead, on first run, and cache them under
+`external/`. Nothing needs to be downloaded by hand.
+
+| File | Size | Source | Fetched by |
+| --- | --- | --- | --- |
+| `GSE89403_rawCounts_GeneNames_AllSamples.csv.gz` | 13 MB | GEO series GSE89403, supplementary files | `20_build_full_dataset.py` |
+| `GSE89403_series_matrix.txt.gz` | 34 KB | GEO series GSE89403, matrix | `20_build_full_dataset.py` |
+| `GSE67589_series_matrix.txt.gz` | 9 MB | GEO series GSE67589, matrix | `27_external_gse67589.py` |
+| `GPL570.annot.gz` | 25 MB | GEO platform GPL570, annotation | `27_external_gse67589.py` |
+
+Downloads are idempotent: each script checks the cache first, writes to a
+`.part` file and renames on completion, so an interrupted run resumes cleanly
+and a re-run costs nothing. Roughly 50 MB is transferred in total.
+
+The per-sample metadata table is derived, not downloaded. `20_build_full_dataset.py`
+parses the sample characteristics out of the GSE89403 series matrix and
+transposes them into `external/GSE89403_full_metadata.csv`, so no
+hand-assembled file sits anywhere in the chain.
+
+If your environment has no outbound network access, place the four files above
+in `external/` yourself and the scripts will use them as they stand.
+
+### Verifying the build
+
+From a clean checkout, `20_build_full_dataset.py` reproduces the committed
+`data2/` byte for byte:
+
+```
+genes retained : 16,145 of 16,147
+libraries      : 367
+subjects       : 98
+```
+
+with 83/7, 85/6, 84/8 and 87/7 cured/unfavourable samples at diagnosis, day 7,
+week 4 and week 24 respectively. If those numbers differ, stop — something
+upstream has changed.
+
 ## Running the pipeline
 
 Scripts are numbered in dependency order and are safe to run in sequence:
@@ -60,11 +101,10 @@ manuscript is typed by hand.
 | `figures2/` | Main and supplementary figures at 300 dpi |
 | `data2/` | Processed expression matrix, sample table, gene map |
 | `models/` | Frozen model per arm, selected features, manifest |
-| `deliverables/` | Manuscript, supplementary, response and cover letters |
+| `deliverables_v14/` | Manuscript, supplementary material, response to reviewers |
 
-Raw GEO downloads are not committed. They are third-party data and the scripts
-retrieve them reproducibly; `data2/` holds the processed matrix so results can
-be checked without re-downloading.
+Raw GEO downloads are not committed (see **Data acquisition** above); `data2/`
+holds the processed matrix so results can be checked without re-downloading.
 
 ## Frozen models
 

@@ -7,12 +7,20 @@ all four protocol timepoints for every subject, which supports a pre-treatment
 arm, a post-treatment arm and a cross-timepoint contrast on identical
 preprocessing.
 
+Inputs are fetched from the NCBI Gene Expression Omnibus on first run and
+cached under DAI_Revision_2026/external/, so this script is self-contained
+from a clean checkout.
+
 Outputs (DAI_Revision_2026/data2/):
   expr_log2cpm.parquet   genes x samples, log2(CPM+1)
   samples.csv            per-sample metadata with outcome label
   genes.csv              Ensembl id -> HGNC symbol
 """
+import gzip
 import os
+import shutil
+import urllib.request
+
 import numpy as np
 import pandas as pd
 
@@ -21,8 +29,14 @@ ROOT = os.path.abspath(os.path.join(HERE, ".."))
 EXT = f"{ROOT}/external"
 OUT = f"{ROOT}/data2"
 os.makedirs(OUT, exist_ok=True)
+os.makedirs(EXT, exist_ok=True)
+
+GEO = "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE89nnn/GSE89403"
+COUNTS_URL = f"{GEO}/suppl/GSE89403_rawCounts_GeneNames_AllSamples.csv.gz"
+MATRIX_URL = f"{GEO}/matrix/GSE89403_series_matrix.txt.gz"
 
 COUNTS = f"{EXT}/GSE89403_rawCounts_GeneNames_AllSamples.csv.gz"
+SERIES = f"{EXT}/GSE89403_series_matrix.txt.gz"
 META = f"{EXT}/GSE89403_full_metadata.csv"
 
 # Timepoint labels as deposited, ordered by protocol week.
@@ -31,7 +45,50 @@ CURE_STATES = {"Definite Cure", "Probable Cure", "Possible Cure"}
 FAILURE_STATE = "Not Cured"
 
 
+def fetch(url, path, label):
+    """Download once and cache. Re-running is cheap and offline-safe."""
+    if os.path.exists(path) and os.path.getsize(path) > 0:
+        return path
+    print(f"downloading {label} from GEO ...")
+    tmp = path + ".part"
+    with urllib.request.urlopen(url, timeout=900) as r, open(tmp, "wb") as fh:
+        shutil.copyfileobj(r, fh)
+    os.replace(tmp, path)
+    print(f"  saved {path} ({os.path.getsize(path) / 1e6:.1f} MB)")
+    return path
+
+
+def build_metadata_csv():
+    """Parse per-sample characteristics out of the GEO series matrix.
+
+    The series matrix stores one tab-separated row per characteristic, with
+    samples as columns, so it is transposed into a conventional sample table.
+    """
+    if os.path.exists(META):
+        return META
+    fetch(MATRIX_URL, SERIES, "GSE89403 series matrix")
+    with gzip.open(SERIES, "rt", encoding="utf8", errors="ignore") as fh:
+        lines = fh.read().split("\n")
+
+    def values(line):
+        return [x.strip('"') for x in line.split("\t")[1:]]
+
+    title = next(l for l in lines if l.startswith("!Sample_title"))
+    gsm = next(l for l in lines if l.startswith("!Sample_geo_accession"))
+    chars = [l for l in lines if l.startswith("!Sample_characteristics_ch1")]
+
+    df = pd.DataFrame({"gsm": values(gsm), "title": values(title)})
+    for row in chars:
+        vals = values(row)
+        key = vals[0].split(":")[0].strip()
+        df[key] = [v.split(":", 1)[1].strip() if ":" in v else v for v in vals]
+    df.to_csv(META, index=False)
+    print(f"  wrote {META} ({len(df)} samples, {df.shape[1]} fields)")
+    return META
+
+
 def load_metadata():
+    build_metadata_csv()
     md = pd.read_csv(META).drop_duplicates("sample_code")
     md = md[md["disease state"] == "TB Subjects"].copy()
     md = md[md["time"].isin(TIMEPOINTS)]
@@ -53,6 +110,7 @@ def load_metadata():
 
 
 def load_counts(sample_codes):
+    fetch(COUNTS_URL, COUNTS, "GSE89403 raw counts (13 MB)")
     raw = pd.read_csv(COUNTS, index_col=0)
     symbols = raw["symbol"]
     keep = [c for c in sample_codes if c in raw.columns]
