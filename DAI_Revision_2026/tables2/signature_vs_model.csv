@@ -1,0 +1,5 @@
+arm,fitted_model_auc,best_published_signature,published_auc,difference
+Pre-treatment,0.654,Kaforou 44-gene (myeloid up / lymphoid down),0.701,-0.046
+Day 7,0.694,Kaforou 44-gene (myeloid up / lymphoid down),0.763,-0.069
+Week 4,0.597,Kaforou 44-gene (myeloid up / lymphoid down),0.677,-0.08
+Week 24,0.926,Kaforou 44-gene (myeloid up / lymphoid down),0.956,-0.03

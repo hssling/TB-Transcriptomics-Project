@@ -1,0 +1,164 @@
+{
+  "technical": [
+    {
+      "arm": "Pre-treatment",
+      "metric": "library size",
+      "median_unfavourable": 64582867.0,
+      "median_cured": 66942065.0,
+      "p_value": 0.15098587494911048
+    },
+    {
+      "arm": "Pre-treatment",
+      "metric": "detection rate",
+      "median_unfavourable": 0.9871802811667802,
+      "median_cured": 0.9899052455564501,
+      "p_value": 0.21110621131575236
+    },
+    {
+      "arm": "Day 7",
+      "metric": "library size",
+      "median_unfavourable": 65282814.0,
+      "median_cured": 65788780.0,
+      "p_value": 0.7373021933450106
+    },
+    {
+      "arm": "Day 7",
+      "metric": "detection rate",
+      "median_unfavourable": 0.9910200037158605,
+      "median_cured": 0.9914535207778534,
+      "p_value": 0.6088000749517276
+    },
+    {
+      "arm": "Week 4",
+      "metric": "library size",
+      "median_unfavourable": 69154662.5,
+      "median_cured": 64953824.5,
+      "p_value": 0.18472035033171455
+    },
+    {
+      "arm": "Week 4",
+      "metric": "detection rate",
+      "median_unfavourable": 0.9908961416981483,
+      "median_cured": 0.9919799343531306,
+      "p_value": 0.9007354721602031
+    },
+    {
+      "arm": "Week 24",
+      "metric": "library size",
+      "median_unfavourable": 62349013.0,
+      "median_cured": 65233667.0,
+      "p_value": 0.35688566633486957
+    },
+    {
+      "arm": "Week 24",
+      "metric": "detection rate",
+      "median_unfavourable": 0.9885427633616152,
+      "median_cured": 0.9923824859106954,
+      "p_value": 0.13601756809529886
+    }
+  ],
+  "influence": {
+    "baseline_auc": 0.9261083743842363,
+    "leave_one_out": [
+      {
+        "subject_removed": "163.0",
+        "outcome": "unfavourable",
+        "auc": 0.925287356321839,
+        "delta": -0.0008210180623973162
+      },
+      {
+        "subject_removed": "168.0",
+        "outcome": "unfavourable",
+        "auc": 0.9157088122605366,
+        "delta": -0.010399562123699746
+      },
+      {
+        "subject_removed": "169.0",
+        "outcome": "unfavourable",
+        "auc": 0.9329501915708812,
+        "delta": 0.006841817186644894
+      },
+      {
+        "subject_removed": "19.0",
+        "outcome": "unfavourable",
+        "auc": 0.9099616858237547,
+        "delta": -0.016146688560481626
+      },
+      {
+        "subject_removed": "21.0",
+        "outcome": "unfavourable",
+        "auc": 0.9636015325670498,
+        "delta": 0.03749315818281351
+      },
+      {
+        "subject_removed": "27.0",
+        "outcome": "unfavourable",
+        "auc": 0.8888888888888891,
+        "delta": -0.03721948549534726
+      },
+      {
+        "subject_removed": "3.0",
+        "outcome": "unfavourable",
+        "auc": 0.9118773946360155,
+        "delta": -0.014230979748220851
+      }
+    ],
+    "min_auc": 0.8888888888888891,
+    "max_abs_delta": 0.03749315818281351
+  },
+  "model_selection": {
+    "week24_min": 0.9014778325123152,
+    "week24_max": 0.9261083743842364,
+    "all_above_0.85": true
+  },
+  "multiplicity": [
+    {
+      "arm": "Pre-treatment",
+      "p_raw": 0.18163672654690619,
+      "p_holm": 0.5449101796407185,
+      "p_bonferroni": 0.7265469061876247,
+      "significant_holm": false
+    },
+    {
+      "arm": "Day 7",
+      "p_raw": 0.20159680638722555,
+      "p_holm": 0.5449101796407185,
+      "p_bonferroni": 0.8063872255489022,
+      "significant_holm": false
+    },
+    {
+      "arm": "Week 4",
+      "p_raw": 0.2634730538922156,
+      "p_holm": 0.5449101796407185,
+      "p_bonferroni": 1.0,
+      "significant_holm": false
+    },
+    {
+      "arm": "Week 24",
+      "p_raw": 0.005988023952095809,
+      "p_holm": 0.023952095808383235,
+      "p_bonferroni": 0.023952095808383235,
+      "significant_holm": true
+    }
+  ],
+  "bacterial_load": [
+    {
+      "measure": "mgit",
+      "n": 63,
+      "spearman_rho": -0.3119277606619878,
+      "p_value": 0.012820883515610927
+    },
+    {
+      "measure": "xpert",
+      "n": 80,
+      "spearman_rho": -0.28314632719776356,
+      "p_value": 0.010928065122595662
+    },
+    {
+      "measure": "tgrv",
+      "n": 94,
+      "spearman_rho": 0.22819553220311342,
+      "p_value": 0.026959093888693914
+    }
+  ]
+}

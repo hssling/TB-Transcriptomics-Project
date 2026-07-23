@@ -1,0 +1,171 @@
+{
+  "cohort": "GSE67589",
+  "patients": 20,
+  "arrays": 57,
+  "celltype": [
+    {
+      "timepoint": "Diagnosis",
+      "cell_type": "Neutrophil",
+      "n_unfavourable": 9,
+      "n_cured": 10,
+      "median_unfavourable": -0.03205289710753559,
+      "median_cured": 0.08762621812911596,
+      "rank_biserial_r": 0.0,
+      "p_value": 1.0
+    },
+    {
+      "timepoint": "Diagnosis",
+      "cell_type": "T_cell",
+      "n_unfavourable": 9,
+      "n_cured": 10,
+      "median_unfavourable": -0.5375025293328182,
+      "median_cured": 0.06919327998262569,
+      "rank_biserial_r": -0.2222222222222222,
+      "p_value": 0.437942822899974
+    },
+    {
+      "timepoint": "Diagnosis",
+      "cell_type": "NLR_score",
+      "n_unfavourable": 9,
+      "n_cured": 10,
+      "median_unfavourable": 0.257337022321781,
+      "median_cured": -0.01718114753168317,
+      "rank_biserial_r": 0.22222222222222232,
+      "p_value": 0.437942822899974
+    },
+    {
+      "timepoint": "Week 2",
+      "cell_type": "Neutrophil",
+      "n_unfavourable": 8,
+      "n_cured": 10,
+      "median_unfavourable": -0.13429646489966734,
+      "median_cured": -0.07323168153569375,
+      "rank_biserial_r": -0.050000000000000044,
+      "p_value": 0.8967503085150144
+    },
+    {
+      "timepoint": "Week 2",
+      "cell_type": "T_cell",
+      "n_unfavourable": 8,
+      "n_cured": 10,
+      "median_unfavourable": 0.20391048306037723,
+      "median_cured": 0.17938589306609232,
+      "rank_biserial_r": -0.025000000000000022,
+      "p_value": 0.965400612459436
+    },
+    {
+      "timepoint": "Week 2",
+      "cell_type": "NLR_score",
+      "n_unfavourable": 8,
+      "n_cured": 10,
+      "median_unfavourable": -0.06731436776542594,
+      "median_cured": -0.3960974820514005,
+      "rank_biserial_r": -0.025000000000000022,
+      "p_value": 0.965400612459436
+    },
+    {
+      "timepoint": "Week 4",
+      "cell_type": "Neutrophil",
+      "n_unfavourable": 10,
+      "n_cured": 10,
+      "median_unfavourable": -0.16853913837909518,
+      "median_cured": -0.16018603089376623,
+      "rank_biserial_r": -0.09999999999999998,
+      "p_value": 0.7337299956962472
+    },
+    {
+      "timepoint": "Week 4",
+      "cell_type": "T_cell",
+      "n_unfavourable": 10,
+      "n_cured": 10,
+      "median_unfavourable": 0.22330997274766634,
+      "median_cured": 0.41195880231325155,
+      "rank_biserial_r": -0.24,
+      "p_value": 0.3846730627355087
+    },
+    {
+      "timepoint": "Week 4",
+      "cell_type": "NLR_score",
+      "n_unfavourable": 10,
+      "n_cured": 10,
+      "median_unfavourable": -0.24632151157606264,
+      "median_cured": -0.45719685767201806,
+      "rank_biserial_r": 0.08000000000000007,
+      "p_value": 0.7913367801006604
+    }
+  ],
+  "transfer": [
+    {
+      "timepoint": "Diagnosis",
+      "discovery_arm": "Pre-treatment",
+      "comparison": "matched timepoint",
+      "genes_transferred": 53,
+      "n": 19,
+      "n_relapse": 9,
+      "roc_auc": 0.4666666666666667,
+      "ci_low": 0.20238095238095238,
+      "ci_high": 0.7555769230769229,
+      "p_value": 0.8382564863858263
+    },
+    {
+      "timepoint": "Diagnosis",
+      "discovery_arm": "Week 24",
+      "comparison": "cross-timepoint",
+      "genes_transferred": 55,
+      "n": 19,
+      "n_relapse": 9,
+      "roc_auc": 0.5,
+      "ci_low": 0.23333333333333334,
+      "ci_high": 0.7840909090909091,
+      "p_value": 1.0
+    },
+    {
+      "timepoint": "Week 2",
+      "discovery_arm": "Day 7",
+      "comparison": "matched timepoint",
+      "genes_transferred": 58,
+      "n": 18,
+      "n_relapse": 8,
+      "roc_auc": 0.3125,
+      "ci_low": 0.06944444444444446,
+      "ci_high": 0.6111111111111112,
+      "p_value": 0.20307143836555602
+    },
+    {
+      "timepoint": "Week 2",
+      "discovery_arm": "Week 24",
+      "comparison": "cross-timepoint",
+      "genes_transferred": 55,
+      "n": 18,
+      "n_relapse": 8,
+      "roc_auc": 0.525,
+      "ci_low": 0.2207792207792208,
+      "ci_high": 0.8250540123456788,
+      "p_value": 0.8967503085150144
+    },
+    {
+      "timepoint": "Week 4",
+      "discovery_arm": "Week 4",
+      "comparison": "matched timepoint",
+      "genes_transferred": 55,
+      "n": 20,
+      "n_relapse": 10,
+      "roc_auc": 0.35,
+      "ci_low": 0.12118181818181814,
+      "ci_high": 0.6354403409090909,
+      "p_value": 0.27303633975118835
+    },
+    {
+      "timepoint": "Week 4",
+      "discovery_arm": "Week 24",
+      "comparison": "cross-timepoint",
+      "genes_transferred": 55,
+      "n": 20,
+      "n_relapse": 10,
+      "roc_auc": 0.49,
+      "ci_low": 0.1918831168831169,
+      "ci_high": 0.7604538690476189,
+      "p_value": 0.9698499769931556
+    }
+  ]
+}

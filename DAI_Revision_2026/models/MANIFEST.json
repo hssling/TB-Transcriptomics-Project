@@ -1,0 +1,77 @@
+{
+  "description": "Frozen models for each analytical arm of the GSE89403 treatment-outcome analysis.",
+  "caveat": "These models are refitted on all samples in their arm for inspection. Reported discrimination comes from cross-validation, not from these fits, and applying a model to its own training data will overstate performance.",
+  "seed": 20260723,
+  "n_features_selected": 200,
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "scikit_learn": "1.8.0",
+    "xgboost": "3.1.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "joblib": "1.4.2"
+  },
+  "arms": {
+    "DX": {
+      "label": "Pre-treatment",
+      "model": "random_forest",
+      "file": "models/model_DX.joblib",
+      "features_file": "models/features_DX.csv",
+      "sha256": "8472da5dd6c988e84a0fbcf35b63341b1922a1f192d128b2d2b6c492ce795ac0",
+      "bytes": 386111,
+      "n_samples": 90,
+      "n_events": 7,
+      "cross_validated_roc_auc": 0.6540447504302926,
+      "permutation_p": 0.18163672654690619
+    },
+    "day_7": {
+      "label": "Day 7",
+      "model": "random_forest",
+      "file": "models/model_day_7.joblib",
+      "features_file": "models/features_day_7.csv",
+      "sha256": "90e791860b50da857ffc9dd90a8efe57b20605254e8bb85b875b10ab1c237212",
+      "bytes": 364400,
+      "n_samples": 91,
+      "n_events": 6,
+      "cross_validated_roc_auc": 0.6941176470588236,
+      "permutation_p": 0.20159680638722555
+    },
+    "week_4": {
+      "label": "Week 4",
+      "model": "gradient_boosting",
+      "file": "models/model_week_4.joblib",
+      "features_file": "models/features_week_4.csv",
+      "sha256": "52cd75da1766775b66b561bd166b948df250212f21568a1757e384f50d4c0b7f",
+      "bytes": 321126,
+      "n_samples": 92,
+      "n_events": 8,
+      "cross_validated_roc_auc": 0.5967261904761905,
+      "permutation_p": 0.2634730538922156
+    },
+    "week_24": {
+      "label": "Week 24",
+      "model": "random_forest",
+      "file": "models/model_week_24.joblib",
+      "features_file": "models/features_week_24.csv",
+      "sha256": "9fe1f2935653ff7804521d2175feb1f4e812baacf98f1c7d0bcb474e0ce2e36e",
+      "bytes": 354053,
+      "n_samples": 94,
+      "n_events": 7,
+      "cross_validated_roc_auc": 0.9261083743842364,
+      "permutation_p": 0.005988023952095809
+    },
+    "combined": {
+      "label": "All timepoints",
+      "model": "random_forest",
+      "file": "models/model_combined.joblib",
+      "features_file": "models/features_combined.csv",
+      "sha256": "023263e2cdcc5eeb21d5da58a5e28e5e9bdbf904732b62f331fa7eee0077c2c1",
+      "bytes": 621742,
+      "n_samples": 367,
+      "n_events": 28,
+      "cross_validated_roc_auc": 0.682574799831437,
+      "permutation_p": 0.003992015968063872
+    }
+  }
+}

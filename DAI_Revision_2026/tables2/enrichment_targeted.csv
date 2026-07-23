@@ -1,0 +1,25 @@
+arm,arm_label,term,overlap,n_overlap,p_value,genes,adjusted_p
+DX,Pre-treatment,Neutrophil degranulation and effector function,0/29,0,1.0,—,1.0
+DX,Pre-treatment,T-cell receptor signalling and adaptive response,0/21,0,1.0,—,1.0
+DX,Pre-treatment,Interferon-inducible response,0/28,0,1.0,—,1.0
+DX,Pre-treatment,Inflammatory and myeloid activation,0/20,0,1.0,—,1.0
+DX,Pre-treatment,Cytotoxic and natural-killer effector programme,0/14,0,1.0,—,1.0
+DX,Pre-treatment,B-cell and immunoglobulin programme,0/10,0,1.0,—,1.0
+day_7,Day 7,T-cell receptor signalling and adaptive response,1/21,1,0.06288749186730577,IL32,0.37732495120383464
+day_7,Day 7,Neutrophil degranulation and effector function,0/29,0,1.0,—,1.0
+day_7,Day 7,Interferon-inducible response,0/28,0,1.0,—,1.0
+day_7,Day 7,Inflammatory and myeloid activation,0/20,0,1.0,—,1.0
+day_7,Day 7,Cytotoxic and natural-killer effector programme,0/14,0,1.0,—,1.0
+day_7,Day 7,B-cell and immunoglobulin programme,0/10,0,1.0,—,1.0
+week_4,Week 4,Neutrophil degranulation and effector function,0/29,0,1.0,—,1.0
+week_4,Week 4,T-cell receptor signalling and adaptive response,0/21,0,1.0,—,1.0
+week_4,Week 4,Interferon-inducible response,0/28,0,1.0,—,1.0
+week_4,Week 4,Inflammatory and myeloid activation,0/20,0,1.0,—,1.0
+week_4,Week 4,Cytotoxic and natural-killer effector programme,0/14,0,1.0,—,1.0
+week_4,Week 4,B-cell and immunoglobulin programme,0/10,0,1.0,—,1.0
+week_24,Week 24,Interferon-inducible response,4/28,4,1.685151768117497e-06,FCGR1A;FCGR1B;METTL7B;VAMP5,1.0110910608704982e-05
+week_24,Week 24,Inflammatory and myeloid activation,2/20,2,0.0017810011486160098,FAM20A;SOCS3,0.00534300344584803
+week_24,Week 24,Neutrophil degranulation and effector function,0/29,0,1.0,—,1.0
+week_24,Week 24,T-cell receptor signalling and adaptive response,0/21,0,1.0,—,1.0
+week_24,Week 24,Cytotoxic and natural-killer effector programme,0/14,0,1.0,—,1.0
+week_24,Week 24,B-cell and immunoglobulin programme,0/10,0,1.0,—,1.0

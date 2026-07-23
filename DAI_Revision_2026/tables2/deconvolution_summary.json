@@ -1,0 +1,107 @@
+{
+  "markers_used": {
+    "Neutrophil": 21,
+    "T_cell": 14,
+    "Monocyte": 7,
+    "B_cell": 6,
+    "NK_cell": 8
+  },
+  "correlations": [
+    {
+      "arm": "DX",
+      "arm_label": "Pre-treatment",
+      "cell_type": "Neutrophil",
+      "n": 90,
+      "spearman_rho": 0.6016627567189364,
+      "p_value": 3.5739388457423735e-10
+    },
+    {
+      "arm": "DX",
+      "arm_label": "Pre-treatment",
+      "cell_type": "T cell",
+      "n": 90,
+      "spearman_rho": -0.6942009301559863,
+      "p_value": 3.277800038325871e-14
+    },
+    {
+      "arm": "DX",
+      "arm_label": "Pre-treatment",
+      "cell_type": "Neutrophil - T cell",
+      "n": 90,
+      "spearman_rho": 0.7431617072066509,
+      "p_value": 4.9824172756569024e-17
+    },
+    {
+      "arm": "day_7",
+      "arm_label": "Day 7",
+      "cell_type": "Neutrophil",
+      "n": 91,
+      "spearman_rho": 0.6123586558369168,
+      "p_value": 1.118342319361993e-10
+    },
+    {
+      "arm": "day_7",
+      "arm_label": "Day 7",
+      "cell_type": "T cell",
+      "n": 91,
+      "spearman_rho": -0.8058130275521579,
+      "p_value": 5.820799446764752e-22
+    },
+    {
+      "arm": "day_7",
+      "arm_label": "Day 7",
+      "cell_type": "Neutrophil - T cell",
+      "n": 91,
+      "spearman_rho": 0.8167701863354039,
+      "p_value": 5.672216914576703e-23
+    },
+    {
+      "arm": "week_4",
+      "arm_label": "Week 4",
+      "cell_type": "Neutrophil",
+      "n": 92,
+      "spearman_rho": 0.4010603702048302,
+      "p_value": 7.435364772937927e-05
+    },
+    {
+      "arm": "week_4",
+      "arm_label": "Week 4",
+      "cell_type": "T cell",
+      "n": 92,
+      "spearman_rho": -0.5534269377186628,
+      "p_value": 1.056059174119348e-08
+    },
+    {
+      "arm": "week_4",
+      "arm_label": "Week 4",
+      "cell_type": "Neutrophil - T cell",
+      "n": 92,
+      "spearman_rho": 0.52847433071837,
+      "p_value": 6.144734087092111e-08
+    },
+    {
+      "arm": "week_24",
+      "arm_label": "Week 24",
+      "cell_type": "Neutrophil",
+      "n": 94,
+      "spearman_rho": 0.4996875327400761,
+      "p_value": 2.940135922776037e-07
+    },
+    {
+      "arm": "week_24",
+      "arm_label": "Week 24",
+      "cell_type": "T cell",
+      "n": 94,
+      "spearman_rho": -0.6151884376315745,
+      "p_value": 4.190343667798779e-11
+    },
+    {
+      "arm": "week_24",
+      "arm_label": "Week 24",
+      "cell_type": "Neutrophil - T cell",
+      "n": 94,
+      "spearman_rho": 0.6272464228860883,
+      "p_value": 1.3391416676869336e-11
+    }
+  ]
+}

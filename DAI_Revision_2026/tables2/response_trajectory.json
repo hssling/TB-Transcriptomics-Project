@@ -1,0 +1,41 @@
+[
+  {
+    "comparison": "Diagnosis to Day 7",
+    "n_subjects": 87,
+    "n_unfavourable": 6,
+    "n_cured": 81,
+    "median_unfavourable": 0.7978626365215782,
+    "median_cured": 0.7089427324432116,
+    "rank_biserial_r": 0.25514403292181065,
+    "p_value": 0.3112475242379185,
+    "roc_auc_low_alignment": 0.3724279835390947,
+    "roc_auc_delta_model": 0.06790123456790126,
+    "genes_in_reference": 2000
+  },
+  {
+    "comparison": "Diagnosis to Week 4",
+    "n_subjects": 85,
+    "n_unfavourable": 7,
+    "n_cured": 78,
+    "median_unfavourable": 0.8532055294938313,
+    "median_cured": 0.7939944440112261,
+    "rank_biserial_r": 0.38827838827838823,
+    "p_value": 0.09212241111218165,
+    "roc_auc_low_alignment": 0.30586080586080583,
+    "roc_auc_delta_model": 0.5384615384615385,
+    "genes_in_reference": 2000
+  },
+  {
+    "comparison": "Diagnosis to Week 24",
+    "n_subjects": 86,
+    "n_unfavourable": 6,
+    "n_cured": 80,
+    "median_unfavourable": 0.8016091131413592,
+    "median_cured": 0.885676577453675,
+    "rank_biserial_r": -0.36250000000000004,
+    "p_value": 0.1457231865646747,
+    "roc_auc_low_alignment": 0.68125,
+    "roc_auc_delta_model": 0.6145833333333334,
+    "genes_in_reference": 2000
+  }
+]

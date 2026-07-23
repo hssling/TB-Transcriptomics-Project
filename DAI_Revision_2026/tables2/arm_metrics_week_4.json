@@ -1,0 +1,158 @@
+{
+  "week_4": {
+    "arm": "week_4",
+    "label": "Week 4",
+    "n": 92,
+    "n_events": 8,
+    "n_subjects": 92,
+    "models": {
+      "logistic_regression": {
+        "model": "logistic_regression",
+        "n": 92,
+        "n_events": 8,
+        "prevalence": 0.08695652173913043,
+        "roc_auc": 0.5744047619047619,
+        "roc_auc_ci": [
+          0.29612393024478867,
+          0.855115105799373
+        ],
+        "pr_auc": 0.1733361030065526,
+        "pr_auc_ci": [
+          0.05561531350980379,
+          0.4540455145629563
+        ],
+        "threshold": 0.169520214165759,
+        "balanced_accuracy": 0.6785714285714286,
+        "mcc": 0.26549712202679576,
+        "brier": 0.08640112739726734,
+        "confusion": {
+          "tn": 72,
+          "fp": 12,
+          "fn": 4,
+          "tp": 4
+        },
+        "per_class": [
+          {
+            "class": "Cured",
+            "n": 84,
+            "sensitivity": 0.8571428571428571,
+            "specificity": 0.5,
+            "ppv": 0.9473684210526315,
+            "npv": 0.25,
+            "f1": 0.9
+          },
+          {
+            "class": "Unfavourable",
+            "n": 8,
+            "sensitivity": 0.5,
+            "specificity": 0.8571428571428571,
+            "ppv": 0.25,
+            "npv": 0.9473684210526315,
+            "f1": 0.3333333333333333
+          }
+        ]
+      },
+      "random_forest": {
+        "model": "random_forest",
+        "n": 92,
+        "n_events": 8,
+        "prevalence": 0.08695652173913043,
+        "roc_auc": 0.5907738095238095,
+        "roc_auc_ci": [
+          0.3032477571640101,
+          0.8781765935214211
+        ],
+        "pr_auc": 0.20992435422132996,
+        "pr_auc_ci": [
+          0.0664227865059067,
+          0.529247929606625
+        ],
+        "threshold": 0.19146590823131787,
+        "balanced_accuracy": 0.7023809523809523,
+        "mcc": 0.3386481059780782,
+        "brier": 0.07852106276000058,
+        "confusion": {
+          "tn": 76,
+          "fp": 8,
+          "fn": 4,
+          "tp": 4
+        },
+        "per_class": [
+          {
+            "class": "Cured",
+            "n": 84,
+            "sensitivity": 0.9047619047619048,
+            "specificity": 0.5,
+            "ppv": 0.95,
+            "npv": 0.3333333333333333,
+            "f1": 0.9268292682926829
+          },
+          {
+            "class": "Unfavourable",
+            "n": 8,
+            "sensitivity": 0.5,
+            "specificity": 0.9047619047619048,
+            "ppv": 0.3333333333333333,
+            "npv": 0.95,
+            "f1": 0.4
+          }
+        ]
+      },
+      "gradient_boosting": {
+        "model": "gradient_boosting",
+        "n": 92,
+        "n_events": 8,
+        "prevalence": 0.08695652173913043,
+        "roc_auc": 0.5967261904761905,
+        "roc_auc_ci": [
+          0.3321906076266542,
+          0.8464573694646397
+        ],
+        "pr_auc": 0.20635044290577814,
+        "pr_auc_ci": [
+          0.05531263968441,
+          0.5350793929072329
+        ],
+        "threshold": 0.04335385707672686,
+        "balanced_accuracy": 0.6458333333333333,
+        "mcc": 0.171351716412013,
+        "brier": 0.07887798455738576,
+        "confusion": {
+          "tn": 56,
+          "fp": 28,
+          "fn": 3,
+          "tp": 5
+        },
+        "per_class": [
+          {
+            "class": "Cured",
+            "n": 84,
+            "sensitivity": 0.6666666666666666,
+            "specificity": 0.625,
+            "ppv": 0.9491525423728814,
+            "npv": 0.15151515151515152,
+            "f1": 0.7832167832167831
+          },
+          {
+            "class": "Unfavourable",
+            "n": 8,
+            "sensitivity": 0.625,
+            "specificity": 0.6666666666666666,
+            "ppv": 0.15151515151515152,
+            "npv": 0.9491525423728814,
+            "f1": 0.24390243902439024
+          }
+        ]
+      }
+    },
+    "best_model": "gradient_boosting",
+    "permutation": {
+      "observed_auc": 0.5863095238095238,
+      "null_mean": 0.4884241071428571,
+      "null_sd": 0.14552826341667055,
+      "n_perm": 500,
+      "permutation_p": 0.2634730538922156
+    },
+    "loo_auc": 0.48809523809523814
+  }
+}
